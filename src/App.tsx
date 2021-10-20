@@ -1,7 +1,7 @@
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 import logo from './assets/Romel-logo-reverse.svg';
-import Profile from './assets/profile.pdf';
+import Profile from './assets/Romel-Profile.pdf';
 import './App.module.css';
 
 const App: Component = () => {
@@ -52,7 +52,9 @@ const App: Component = () => {
           <div class='py-5'>
             <a
               // href={Profile}
+              href='/assets/Romel-Profile.pdf'
               class='btn border border-white px-3 rounded-3 text-reset text-decoration-none h1 fw-bold'
+              target='_blank'
               // download
             >
               <i class='bi bi-download me-2'></i>
@@ -62,6 +64,20 @@ const App: Component = () => {
           </div>
           <div class='col-3 mx-auto pb-5'>
             <img src={logo} class='img-fluid' alt='logo' />
+          </div>
+          <div>
+            <a
+              href='https://goo.gl/maps/GBHsqPu4AxLUTehMA'
+              target='_blank'
+              class='text-decoration-none text-reset'
+            >
+              Le'mac Towers, 4th floor, church Rd,Westlands
+            </a>
+          </div>
+          <div>
+            <a class='text-decoration-none text-reset' href='tel:+254112715885'>
+              0112715885
+            </a>
           </div>
         </div>
       </header>
