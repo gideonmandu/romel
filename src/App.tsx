@@ -1,5 +1,6 @@
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
+// import emailjs from 'emailjs-com';
 import logo from './assets/Romel-logo-reverse.svg';
 import Profile from './assets/Romel-Profile.pdf';
 import './App.module.css';
@@ -51,11 +52,10 @@ const App: Component = () => {
           </div>
           <div class='py-5'>
             <a
-              // href={Profile}
-              href='/assets/Romel-Profile.pdf'
+              href='https://drive.google.com/file/d/13ROIcwvOCLtH0tka8nAVY_jcOx9yutHS/view?usp=sharing'
               class='btn border border-white px-3 rounded-3 text-reset text-decoration-none h1 fw-bold'
               target='_blank'
-              // download
+              download
             >
               <i class='bi bi-download me-2'></i>
               {/* <i class="bi bi-cloud-download"></i> */}
@@ -71,7 +71,7 @@ const App: Component = () => {
               target='_blank'
               class='text-decoration-none text-reset'
             >
-              Le'mac Towers, 4th floor, church Rd,Westlands
+              Le'mac Towers, 4th floor, church Rd, Westlands
             </a>
           </div>
           <div>
